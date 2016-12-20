@@ -2,3 +2,19 @@ img {
   margin: auto;
   display: block;
 }
+#glasses {
+  margin:50px;
+  position: relative;
+  bottom:116px;
+  left: 4px;
+}
+#octopus {
+  position:relative;
+  top: 125px;
+  z-index: -1;
+}
+#hat {
+  position: absolute;
+  top: 30px;
+  left: 400px;
+}
