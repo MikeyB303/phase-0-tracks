@@ -1,0 +1,19 @@
+#contact-info {
+  font-size: .8em;
+}
+
+.job {
+  background-color: #e9e5dc;
+  border-radius: 5px;
+  padding: 7px;
+  margin-top: 5px;
+}
+
+ul {
+  font-size: .8em;
+}
+
+ol > li {
+  font-family: Helvetica;
+  color: Red;
+}
