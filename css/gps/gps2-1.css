@@ -1,0 +1,41 @@
+header {
+  border: solid 3.5px;
+  padding: 10px;
+  width: 847px;
+  background: beige;
+  font-family: Courier;
+}
+
+.column-1 {
+  display: inline-block;
+  vertical-align: top;
+  border: solid 1px;
+  width: 40%;
+  height: 1000px;
+  padding-right: 10px;
+  margin-right: -5px;
+  background: Lavender;
+}
+
+.column-2 {
+  display: inline-block;
+  vertical-align: top;
+  border: solid 1px;
+  height: 1000px;
+  background: Lavender;
+}
+
+footer {
+  border: solid 3.5px;
+  padding: 10px;
+  width: 847px;
+}
+
+a:hover {
+  color: red;
+}
+
+h2:hover {
+  color: aqua;
+  letter-spacing: 5px;
+}
