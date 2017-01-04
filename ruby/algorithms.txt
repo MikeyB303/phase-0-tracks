@@ -1,0 +1,22 @@
+Elevator Robot
+-Enter elevator
+-Define desired floor
+-Approach number panel
+-Press button that matches desired floor
+-Wait
+-Once desired floor is reached
+	-Leave elevator
+
+—————————————————————
+Going to the Gym
+-Wake up
+-If it’s before 10am
+	-Make breakfast
+	-Take pre workout
+-Otherwise
+	-Take pre workout
+-Go to the gym
+-Lift until tired
+-Go home
+-Eat all the food
+
