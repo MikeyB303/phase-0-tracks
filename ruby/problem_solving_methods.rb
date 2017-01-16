@@ -24,20 +24,6 @@ def search_array(array, number)
   end
   p result
 end
+
 search_array(arr, 20)
 
-#Release 1
-def fib(index)
-  fibonacci = [0, 1]
-  until fibonacci.length == (index)
-    fibonacci.push((fibonacci[-1])+(fibonacci[-2]))
-  end
-  p fibonacci
-end
-
-fib(4)
-
-fib(100)
-
-#Release 2
-#
