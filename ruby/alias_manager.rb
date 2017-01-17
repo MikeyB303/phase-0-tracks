@@ -21,7 +21,7 @@ while counter == 0
     name_letters.each do |letter|
       vowels = ["a","e","i","o","u"]
       consonants = ["b","c","d","f","g","h","j","k","l","m","n",
-        "p","q","r","s","t","v","x","z","w","y"]
+        "p","q","r","s","t","v","x","z","w","y","z"]
       if vowels.include?(letter)
         letter_index = vowels.index(letter)
         if letter_index + 1 < vowels.length
