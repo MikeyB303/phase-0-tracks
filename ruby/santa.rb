@@ -1,4 +1,6 @@
 class Santa
+  #attr_reader :age, :ethnicity, :reindeer_ranking (couldn't get these to work)
+  #attr_accessor :gender
   
   def speak
     puts "Ho, ho, ho! Haaaappy holidays!"
@@ -28,7 +30,15 @@ class Santa
   def gender=(new_gender)
     @gender = new_gender
   end
-  
+
+  def age=(new_age)
+    @age = new_age
+  end
+
+  def ethnicity=(new_ethnicity)
+    @ethnicity = new_ethnicity
+  end
+
   #getters
   def age
     puts @age
@@ -38,18 +48,30 @@ class Santa
     puts @ethnicity
   end
 
+  def gender
+    puts @gender
+  end
+
   def reindeer_ranking
     puts @reindeer_ranking
   end
 end
 
-santa = Santa.new("agender", "Japanese")
+genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
+ethnicities = ["black", "Latino", "white", "Japanese-African", 
+  "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
+counter = 0
 
-santa.speak
-santa.eat_milk_and_cookies("double chocolate chip crunch")
-santa.get_mad_at("Vixen")
-santa.reindeer_ranking
-santa.celebrate_birthday
-santa.gender = "Female"
-santa.age
-santa.ethnicity
+until counter == 100
+  puts "creating new Santa."
+  santa = Santa.new("default", "default")
+  santa.gender = genders.sample
+  santa.ethnicity = ethnicities.sample
+  santa.age = rand(140)
+  puts santa.gender
+  puts santa.ethnicity
+  puts santa.age
+  counter += 1 
+
+end
+
