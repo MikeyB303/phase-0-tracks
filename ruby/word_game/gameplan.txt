@@ -1,0 +1,7 @@
+-the game will start with an empty array and guess counter at 0
+-the word or phrase will be put into the empty array and a new array of ‘_’ will be created based on the length of the word or phrase
+-the guess counter will be given a max value based on the length of the word
+-guessed letters will be compared to the original word and added to the _ array if matched
+-guessed letters will also be put into an array that will be checked to make sure repeated guesses don’t count
+-once the user completes the word or phrase a message will appear
+-if the user doesn’t guess correctly a message will appear
