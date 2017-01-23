@@ -1,11 +1,11 @@
 require_relative 'word_game'
 
 describe Word_Game do
-  let(:game) {Word_Game.new}
+  let(:game) {Word_Game.new("Hello World")}
 
   it "takes a word, separates the 
   letters into an array" do
-    expect(game.letters("Hello World")).to eq 
+    expect(game.letters).to eq 
     ["h","e","l","l","o","w","o","r","l","d"]
   end
 
