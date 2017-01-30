@@ -7,3 +7,16 @@ for (i = 0; i < colors.length && horseNames.length; i++) {
 }
 
 console.log(horses)
+
+function Car(make,model,year) {
+  console.log("Creating a new car");
+  this.make = make;
+  this.model = model;
+  this.year = year;
+  this.honk = function() {console.log("BEEP BEEP!");};
+  console.log("Enjoy your new car!")
+}
+
+var jeep = new Car("Jeep","Grand-Cherokee",2015);
+console.log(jeep);
+jeep.honk();
