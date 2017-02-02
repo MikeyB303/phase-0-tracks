@@ -1,0 +1,9 @@
+1. SELECT * FROM ranks;
+2. UPDATE players SET rank_id= 11 WHERE name = "Dean Pelton";
+3. SELECT * FROM players, ranks WHERE players.rank_id = ranks.id;
+4. ELECT players.name, ranks.rank FROM players JOIN ranks ON players.rank_id = ranks.id; 
+5. DELETE FROM players WHERE name = "DOMAN";
+
+OTHER JOINS
+SELECT players.name FROM players INNER JOIN ranks ON players.rank_id = ranks.id;
+SELECT players.name FROM players LEFT JOIN ranks ON players.rank_id = ranks.id;
