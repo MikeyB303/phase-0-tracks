@@ -92,13 +92,15 @@ def check_artists
   artists.each do |hash|
     puts hash["artist_name"] + " " + hash["art_request_total"].to_s
   end
-
 end
 
-check_artists
-
-
 #create a method to check songs and total requests
+def check_genres
+  genres = $db.execute("SELECT * FROM genres")
+  genres.each do |hash|
+    puts hash["genre_name"] + " " + hash["gen_request_total"].to_s
+  end
+end
 
 #create user interface
 
