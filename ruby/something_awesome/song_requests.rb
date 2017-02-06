@@ -1,4 +1,7 @@
 #Song Request Log
+#I made this with the intention of giving it to some of my friends who work at a radio station I used to work for
+#At the station, DJs are required to take down song requests ON A PAPER LOG!! How barbaric!
+#This is just in it's beginning stages, but I'm sure I'll be able to present it to them soon!
 
 #require gems
 require 'sqlite3'
