@@ -1,0 +1,21 @@
+1. Join three tables
+SELECT * FROM reviews 
+INNER JOIN users
+ON reviews.user_id = users.id
+INNER JOIN businesses
+ON reviews.business_id = businesses.id;
+
+2. Join three tables with relevant data only
+SELECT stars, comment, first_name, last_name, name FROM reviews 
+INNER JOIN users
+ON reviews.user_id = users.id
+INNER JOIN businesses
+ON reviews.business_id = businesses.id;
+
+3. View data of all three tables for just one business
+SELECT stars, comment, first_name, last_name, name FROM reviews 
+INNER JOIN users
+ON reviews.user_id = users.id
+INNER JOIN businesses
+ON reviews.business_id = businesses.id
+WHERE business_id= 1;
