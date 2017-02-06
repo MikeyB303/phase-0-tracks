@@ -73,9 +73,22 @@ genres = $db.execute("SELECT * FROM genres")
   $db.execute("INSERT INTO requests (artist_id, song, genre_id, request_origin, in_library, day) VALUES (?, ?, ?, ?, ?, ?)", [artist_id, song, genre_id, origin, library, date])
 end
 
-
-
 #create a method to check full request log
+def check_requests
+  requests = $db.execute("SELECT artist_name, song, genre_name, request_origin, in_library, day FROM requests 
+  INNER JOIN artists
+  ON requests.artist_id = artists.id
+  INNER JOIN genres
+  ON requests.genre_id = genres.id;
+  ")
+  requests.each do |hash|
+    puts hash["artist_name"] + " " + hash["song"] + " " + hash["genre_name"] + " " + hash["request_origin"] + " " + hash["in_library"].to_s + " " + hash["day"].to_s
+  end
+end
+
+#create a method to check most requested artist
+
+#create a method to check most requested song
 
 #create user interface
 
