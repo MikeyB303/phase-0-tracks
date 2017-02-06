@@ -103,7 +103,44 @@ def check_genres
 end
 
 #create user interface
-
+puts "Hello! Welcome to the Request Log, what would you like to do?"
+loop do
+  puts "Commands: 'add request','check requests','check artists','check genres','exit'"
+  response = gets.chomp
+  if response == "add request"
+    puts "What artist is being requested?"
+    artist = gets.chomp
+    puts "What song is being  requested?"
+    song = gets.chomp
+    puts "What genre is the song?"
+    genre = gets.chomp
+    puts "How was the request made? (Phone, Twitter, Other)"
+    origin = gets.chomp
+    puts "Was the requested song in our library? (yes/no)"
+    library = gets.chomp
+      if library == "yes"
+        library = 1
+      else
+        library = 0
+      end
+    puts "When was the request made? (yyyymmdd)"
+    day = gets.chomp.to_i
+    add_request(artist, song, genre, origin, library, day)
+    puts "Request successfully added!"  
+  elsif response == "check requests"
+    check_requests
+  elsif response == "check artists"
+    check_artists
+  elsif response == "check genres"
+    check_genres
+  elsif response == "exit"
+    puts "Thanks for using the Request Log! Goodbye!"
+    break
+  else
+    puts "Please use a valid command"
+  end
+  puts "Would you like to do something else?"  
+end
 
 
 
