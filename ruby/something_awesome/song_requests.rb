@@ -86,9 +86,19 @@ def check_requests
   end
 end
 
-#create a method to check most requested artist
+#create a method to display artists and total requests
+def check_artists
+  artists = $db.execute("SELECT * FROM artists")
+  artists.each do |hash|
+    puts hash["artist_name"] + " " + hash["art_request_total"].to_s
+  end
 
-#create a method to check most requested song
+end
+
+check_artists
+
+
+#create a method to check songs and total requests
 
 #create user interface
 
